@@ -260,8 +260,7 @@ public class ConexionOracle<T extends Object> implements ModelDAO<T> {
     private void letraMayuscula() {
         System.out.println("Numero de columnas "+columnas.length);
         for (int i = 0; i < columnas.length; i++) {
-            String string = columnas[i];
-            System.out.println(i + " " + string);
+            String string = columnas[i];            
             columnas[i] = Character.toUpperCase(string.charAt(0)) + string.substring(1).toLowerCase();
         }
     }
