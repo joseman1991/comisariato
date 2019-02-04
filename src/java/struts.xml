@@ -1,0 +1,40 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="index" class="submit.ClienteSubmit">
+            <result name="success">index.jsp</result>            
+        </action>
+        
+        <action name="audi" class="submit.ClienteSubmit">
+            <result name="success">auditoria.jsp</result>            
+        </action>
+        
+        <action name="editar" class="submit.ClienteSubmit">
+            <result name="success">auditoria.jsp</result>            
+        </action>
+        
+        <action name="sub" class="submit.ArticulosSubmit">
+            <result name="success">sub.jsp</result>            
+        </action>
+        
+        <action name="insertar" class="submit.ClienteSubmit" method="insertar">
+            <result name="success">index.jsp</result>            
+        </action>
+        <action name="actualizado" class="submit.ClienteSubmit" method="actualizar">
+            <result name="success">auditoria.jsp</result>            
+        </action>
+        
+        <action name="editar" class="submit.ClienteSubmit" method="obtenerCliente">
+            <result name="success">auditoria.jsp</result>            
+        </action>
+   
+        <action name="consultar" class="submit.ArticulosSubmit" method="consultar">
+            <result name="success">sub.jsp</result>            
+        </action>
+   
+    </package>
+</struts>
