@@ -1,10 +1,10 @@
- connect system/oracle1;
+-- connect system/oracle1;
 
-drop user damian cascade;
+--drop user damian cascade;
 
 
-drop tablespace dg_Oracle_tbls_comi
-including contents and datafiles;
+--drop tablespace dg_Oracle_tbls_comi
+i--ncluding contents and datafiles;
 
 
 create tablespace dg_Oracle_tbls_comi
@@ -239,5 +239,6 @@ show errors procedure ver_auditoria;
  
  
  -------------------------------------------
+
  
  
